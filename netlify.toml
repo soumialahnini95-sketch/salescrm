@@ -1,0 +1,9 @@
+[build]
+  command = "pnpm run build:static"
+  publish = "dist/public"
+
+# Client-side routing (wouter): serve the SPA for unknown paths
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
